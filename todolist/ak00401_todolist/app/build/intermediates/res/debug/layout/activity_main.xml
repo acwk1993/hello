@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displaylist"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true"
+        android:longClickable="false"
+        android:scrollingCache="true"
+        android:background="#ff3bff43" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:hint="enter notes here"
+        android:layout_below="@+id/addbtn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add  Notes"
+        android:id="@+id/addbtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/addbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="false"
+        android:onClick="onAddNotes"/>
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/adrian/Desktop/ak00401_todolist/app/src/main/res/layout/activity_main.xml -->
